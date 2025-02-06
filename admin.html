@@ -142,7 +142,7 @@
 
   <script>
   async function getData() {
-    const url = "http://localhost:3000/getApps";
+    const url = "https://futurepath1.onrender.com";
     try {
       const result = await fetch(url);
       const response = await result.json();
@@ -166,7 +166,7 @@
       const buttons = document.getElementsByClassName("del-button")
       Array.from(buttons).forEach(btn => {
         btn.addEventListener("click", function(e) {
-          fetch('http://localhost:3000/delApp', {
+          fetch('https://futurepath1.onrender.com', {
               method: 'POST', // Specify the request method
               headers: {
                   'Content-Type': 'application/json' // Indicate the content type
@@ -201,7 +201,7 @@
   getData();
 
   async function getPostings() {
-    const url = "http://localhost:3000/get";
+    const url = "https://futurepath1.onrender.com";
     try {
       const result = await fetch(url);
       const response = await result.json();
@@ -220,7 +220,7 @@
       const buttons = document.getElementsByClassName("del-post-button")
       Array.from(buttons).forEach(btn => {
         btn.addEventListener("click", function(e) {
-          fetch('http://localhost:3000/delPost', {
+          fetch('https://futurepath1.onrender.com', {
               method: 'POST', // Specify the request method
               headers: {
                   'Content-Type': 'application/json' // Indicate the content type
